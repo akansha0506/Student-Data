@@ -1,0 +1,50 @@
+{% include "head.html" %}
+
+<div class="container my-5 border border-5" >
+    <table class="table table-light table-striped" >
+        {% for a in regno %}
+        <tr>
+            <th>Name</th>
+            <td>{{a.name}}</td>
+        </tr>
+        <tr>
+            <th>Father Name</th>
+            <td>{{a.fathername}}</td>
+        </tr>
+        <tr>
+            <th>Mother Name</th>
+            <td>{{a.mothername}}</td>
+        </tr>
+        <tr>
+            <th>Phone No.</th>
+            <td>{{a.phoneno}}</td>
+        </tr>
+        <tr>
+            <th>Course</th>
+            <td>{{a.course}}</td>
+        </tr>
+        <tr>
+            <th>Address</th>
+            <td>{{a.address}}</td>
+        </tr>
+        <tr>
+            <th>Gender</th>
+            <td>{{a.gender}}</td>
+        </tr>
+        <tr>
+            <th>Fee</th>
+            <td>{{a.fee}}</td>
+        </tr>
+        <tr>
+           <th>Batchtime</th>
+           <td>{{a.btime}}</td>
+        </tr>
+        <tr>
+            <th>Photo</th>
+            <td>{{a.photo}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+  </div>
+
+{% include "footer.html" %}
